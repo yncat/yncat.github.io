@@ -37,6 +37,11 @@ github_username: yncat
 
 # Build settings
 theme: monophase
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - - jekyll-seo-tag
+  - kramdown-parser-gfm
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
