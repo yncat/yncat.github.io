@@ -40,7 +40,7 @@ theme: monophase
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - - jekyll-seo-tag
+  - jekyll-seo-tag
   - kramdown-parser-gfm
 # Exclude from processing.
 # The following items will not be processed, by default.
