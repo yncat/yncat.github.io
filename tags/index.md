@@ -1,0 +1,4 @@
+---
+layout: archive
+type: tags
+---
