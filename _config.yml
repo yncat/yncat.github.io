@@ -20,9 +20,12 @@
 
 title: 猫の前足
 email: personal@nyanchangames.com
-author.name: 猫
+
 lang: jp
-author.url: https://github.com/yncat
+
+author:
+  name: 猫
+  url: https://www.nyanchangames.com/
 tags_path: /tags/
 
 description: >- # this means to ignore newlines until "baseurl:"
