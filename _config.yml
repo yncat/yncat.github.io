@@ -36,7 +36,6 @@ twitter_username: nyanchan2013
 github_username: yncat
 
 # Build settings
-theme: monophase
 plugins:
   - jekyll-feed
   - jekyll-paginate
