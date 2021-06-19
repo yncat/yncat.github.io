@@ -7,7 +7,7 @@ tag: audiogamecenter
 
 まずは詳細ページから。
 
-https://www.ginzasonypark.jp/program/032/
+[https://www.ginzasonypark.jp/program/032/](https://www.ginzasonypark.jp/program/032/)
 
 今回はなんと、私を含む 3 人のアーティストが、それぞれオーディオゲームを作って展示します!
 
