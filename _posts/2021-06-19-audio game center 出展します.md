@@ -1,6 +1,6 @@
 ---
 layout: post
-tag: audiogamecenter
+tag: audiogamecenter game
 ---
 
 # 今年の audio game center は、ソニーパークでの展示です!
