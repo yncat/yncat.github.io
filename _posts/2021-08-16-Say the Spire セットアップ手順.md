@@ -11,7 +11,7 @@ tags: saythespire slaythespire game
 
 [Slay the Spire](https://store.steampowered.com/app/646570/Slay_the_Spire/?l=japanese) というゲームがあります。楽しいです。どんなゲームかは、公式サイトを見てください。
 
-[Say the Spire](https://steamcommunity.com/sharedfiles/filedetails/?id=2239220106) は、 Say the Spire をスクリーンリーダーで読めるようにする追加のプログラムです。これをインストールすると、画面を見なくても、ゲームをプレイできるようになります。
+[Say the Spire](https://steamcommunity.com/sharedfiles/filedetails/?id=2239220106) は、 Slay the Spire をスクリーンリーダーで読めるようにする追加のプログラムです。これをインストールすると、画面を見なくても、ゲームをプレイできるようになります。
 
 # セットアップ手順
 
@@ -46,6 +46,8 @@ tags: saythespire slaythespire game
 というオマジナイを唱えてください。よく分からない人は、上の1行を bat という拡張子で保存して、それを実行してください。例によって Slay the Spire の場所を変えている人は、よしなにしてください。
 
 ## 落とした cmd ファイルから起動する
+
+さっき落とした起動ファイルを、 explorer などで普通にエンターすると、なにか起動します。
 
 起動ファイルからゲームを立ち上げると、 Slay the Spire 本体が立ち上がる前に、 Mod the Spire という画面が出てきます。これは、 Slay the Spire の mod を管理するための存在です。
 
