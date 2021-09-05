@@ -29,7 +29,7 @@ export default function ChatMessageList(props: Props) {
 
 次に、イベントの種類がいっぱい増えていくルと、いちいち subscribe なんとかとか unsubscribe なんとかとかいうメソッドを作るのがいやになってきます。
 
-最後に、 subscribe はあとからでもできる想定なので、 subscriber を保持しておく場所は、 subscriber:SubscriberFunc|null; みたいに定義するしかないです。こうすると、いちいち constructor で this.ogehogeSubscriber = null; みたいに書かなきゃいけないです。だるいです。しかも、 subscriber を呼ぶときに、いちいち null チェックをしないと TypeScript が「nullかもよ、ヌルポするかもよ危ないよねえねえマズいんじゃない？てかマズいよ直しなさいよ」って怒ります。当然ですね。やっぱりだるいです。
+最後に、 subscribe はあとからでもできる想定なので、 subscriber を保持しておく場所は、 `subscriber:SubscriberFunc|null;` みたいに定義するしかないです。こうすると、いちいち constructor で `this.ogehogeSubscriber = null;` みたいに書かなきゃいけないです。だるいです。しかも、 subscriber を呼ぶときに、いちいち null チェックをしないと TypeScript が「nullかもよ、ヌルポするかもよ危ないよねえねえマズいんじゃない？てかマズいよ直しなさいよ」って怒ります。当然ですね。やっぱりだるいです。
 
 # オレオレ汎用pubsub的なやつを作った
 
@@ -65,7 +65,7 @@ const playerCountPubsub = new Pubsub<PlayerCountSubscriber>();
 
 subscribe の型は PlayerCountSubscriber になるので、 playerCountPubsub.subscribe と打ったら、 vscode がちゃーんと subscriber:PlayerCountSubscriber とヒントを出してくれます。
 
-最初、 <T extends Function> にしてたんですが、これだとだめっぽかったです。このあと、 Parameters<T> っていう組み込みの generics を使うんですが、それが <T extends (...args: any) => any> としてたので、それを拝借してきました。最後を any から void に変えたのは、基本的に subscriber から値を返すことはないからです。
+最初、 `<T extends Function>` にしてたんですが、これだとだめっぽかったです。このあと、 `Parameters<T>` っていう組み込みの generics を使うんですが、それが `<T extends (...args: any) => any>` としてたので、それを拝借してきました。最後を any から void に変えたのは、基本的に subscriber から値を返すことはないからです。
 
 unsubscribe は書いてないけど、結局同じです。
 
@@ -73,9 +73,9 @@ unsubscribe は書いてないけど、結局同じです。
 
 次に、 publish を呼んで、そこに更新情報を載せたら、 subscribe してる人たちに全員通知が行くというやつを作ります。
 
-書き始めるまで忘れてたんですが、 publish を作るということは、更新情報の引数を一般化できる必要があります。さっきの例でいえば、プレイヤーの人数だったら、 publish の引数は number 1個になってほしいし、ルーム入ったぜっていうやつだったら、 publish の引数は string と number になってほしいです。これ一筋縄じゃいかなくねって思って調べたら、 Parameters<T> とかいう組み込みの generics がありました。これの中身がどうなってるかは知りません。たぶん俺は読んでも理解できないです。
+書き始めるまで忘れてたんですが、 publish を作るということは、更新情報の引数を一般化できる必要があります。さっきの例でいえば、プレイヤーの人数だったら、 publish の引数は number 1個になってほしいし、ルーム入ったぜっていうやつだったら、 publish の引数は string と number になってほしいです。これ一筋縄じゃいかなくねって思って調べたら、 `Parameters<T>` とかいう組み込みの generics がありました。これの中身がどうなってるかは知りません。たぶん俺は読んでも理解できないです。
 
-Parameters<T> は、関数のタイプを渡すと、それの引数を、型のタプルにして返してくれるらしいです。
+`Parameters<T>` は、関数のタイプを渡すと、それの引数を、型のタプルにして返してくれるらしいです。
 
 TypeScriptでは、型のタプルがあるとき、 ... を使えば、それを引数に転回することができます。これを使うと、なんとさっきのことそのままが実現しちゃいます。こんな感じ。
 
