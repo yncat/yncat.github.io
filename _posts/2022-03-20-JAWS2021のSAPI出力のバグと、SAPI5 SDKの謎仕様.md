@@ -11,7 +11,7 @@ HISSのSAPI拡張をJAWS2021日本語版で使うと、音声速度の設定が�
 
 SAPI5のインターフェイスは、 [ISpVoice](https://documentation.help/SAPI-5/ISpVoice.htm) です。これを経由してSAPIを操作できます。たとえば、しゃべらせるときには [::Speak](https://documentation.help/SAPI-5/ISpVoice_Speak.htm) を使います。
 
-SAPIの音声速度は、-10から10の範囲で指定することになっています。それ以上、またはそれ以下の値を指定したとき、SAPI5のレイヤーではその値を丸め込みませんが、範囲外をサポートするかどうかはエンジンに寄ります、たぶんそんなあたいはサポートしてないから丸められますよ、かってにしてね、という(投げやりなスタンスのようです)[https://documentation.help/SAPI-5/Engine_Characteristics.htm]。SAPIの音声速度を変える方法は2通りあります。
+SAPIの音声速度は、-10から10の範囲で指定することになっています。それ以上、またはそれ以下の値を指定したとき、SAPI5のレイヤーではその値を丸め込みませんが、範囲外をサポートするかどうかはエンジンに寄ります、たぶんそんなあたいはサポートしてないから丸められますよ、かってにしてね、という (投げやりなスタンスのようです)[https://documentation.help/SAPI-5/Engine_Characteristics.htm] 。SAPIの音声速度を変える方法は2通りあります。
 
 1つめは、 [::SetRate](https://documentation.help/SAPI-5/ISpVoice_SetRate.htm) メソッドを呼び出して設定値を与える方法です。これは、インスタンスにより保持される状態なので、これ以降の全ての音声発生に対して速度変更が作用します。
 
