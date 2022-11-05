@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: tech
+tags: a11y feedback game
 ---
 
 
