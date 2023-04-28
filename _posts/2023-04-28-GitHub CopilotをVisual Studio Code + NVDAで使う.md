@@ -62,3 +62,4 @@ function calculateDaysBetweenDates(start, end) {
 
 以前まではctrl+slashで提案の採用ができなかったらしいです。丁度最近その機能が追加されてました。最高かよ。 [喜びのコメントをしておきました](https://github.com/orgs/community/discussions/7139) 。
 
+本当は、 alt+[とかalt+]で前後の提案を表示できるんだけど、これは読まないので、ぱっと提案が出てきておおすげえといって直感的に採用、というのはまだちょっと遠いようです。vscode側にはissueとして上がっているらしい。
