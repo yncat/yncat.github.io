@@ -66,3 +66,9 @@ function calculateDaysBetweenDates(start, end) {
 以前まではctrl+slashで提案の採用ができなかったらしいです。丁度最近その機能が追加されてました。最高かよ。 [喜びのコメントをしておきました](https://github.com/orgs/community/discussions/7139) 。
 
 本当は、 alt+[とかalt+]で前後の提案を表示できるんだけど、これは読まないので、ぱっと提案が出てきておおすげえといって直感的に採用、というのはまだちょっと遠いようです。vscode側にはissueとして上がっているらしい。
+
+コマンドパレットに Preferences: Open Accessibility Settings というのがあって、そこに 
+
+> Editor Screen Reader Announce Inline Suggestion. Modified. Control whether inline suggestions are announced by a screen reader. Note that this does not work on macOS with VoiceOver. 
+
+こんな設定があります。これを入れると切れ端を読んだりすることがあるのですが、完璧ではないようです。
