@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: tips
+tags: funny
 ---
 
 # チャットボットが困った顔をしているのが想像できる
