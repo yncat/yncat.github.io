@@ -96,7 +96,6 @@ for i in range(target):
         print("buzz")
     elif i%3 == 0 and i%5 == 0:
         print("fizzbuzz")
-
 ```
 
 これは微妙に間違っているのですが、あえて聞いてみます。
@@ -117,7 +116,7 @@ The order of the if statements needs to be changed so that the "fizzbuzz" case i
 The conditions in the if statements are incorrect. The "fizz" case should check for multiples of 3, the "buzz" case should check for multiples of 5, and the "fizzbuzz" case should check for multiples of both 3 and 5.
 Here's the corrected code:
 
-``````
+```
 import sys
 
 target = int(sys.argv[1])
@@ -132,10 +131,9 @@ for i in range(target):
         print("fizz")
     else:
         print(current)
-``````
+```
 
 In this version of the code, we first convert target to an integer using the int function. We then check the "fizzbuzz" case first, followed by the "buzz" and "fizz" cases. Finally, if none of these cases apply, we print the current number.
-```
 
 ## 使い方その3: スラッシュコマンド
 
