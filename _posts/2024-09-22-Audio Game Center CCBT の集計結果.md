@@ -5,7 +5,7 @@ tags: reports
 
 Audio Game Center + CCBT にお越しくださったみなさん、ありがとうございました。
 
-ソニーパークのときもやりましたが、「スクリーミング・ストライクネオ」のいろんな集計データを置いておきます。
+[ソニーパークのとき](https://yncat.github.io/2021/07/19/audio-game-center-+-screaming-strike-neo-%E9%96%8B%E7%99%BA%E8%80%85%E7%B7%8F%E6%8B%AC.html) もやりましたが、「スクリーミング・ストライクネオ」のいろんな集計データを置いておきます。
 
 ## 基本情報
 
