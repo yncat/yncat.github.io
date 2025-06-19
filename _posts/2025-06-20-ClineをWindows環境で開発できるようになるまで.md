@@ -26,4 +26,4 @@ tags: tips
 
 [Fix: Make some of the buttons on the task header accessible to screen readers #4246](https://github.com/shrijayan/TWCline-open-source/commit/484a19377393e5a89c277ffc982d7e2f60306e3e)
 
-Fix: Add role and aria-checked attributes to plan / act mode sw[itch so that screen readers can tell its state ( Resolves #4244 ) #4263](https://github.com/cline/cline/pull/4263)
+[Fix: Add role and aria-checked attributes to plan / act mode switch so that screen readers can tell its state ( Resolves #4244 ) #4263](https://github.com/cline/cline/pull/4263)
